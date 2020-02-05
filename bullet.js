@@ -14,9 +14,6 @@ function Bullet(x,y,yspeed, c1,c2,c3) {
   }
 
   this.getHitEnemy = function() {
-    if(this.cachedEnemies.length < 1) {
-      return false;
-    }
     for(var i = 0; i < this.cachedEnemies.length; i++) {
       
       var e = this.cachedEnemies[i];
